@@ -49,7 +49,6 @@ function addFields() {
     coinInputWrapper.appendChild(coinsNumberInput);
     coinInputWrapper.appendChild(conversionResultSpan);
     form.appendChild(coinInputWrapper);
-    form.appendChild(document.createElement("br"));
   }
   const selectLabel = createElement("label", {
     for: "converting-currencies",
@@ -100,9 +99,7 @@ form.addEventListener("submit", (e) => {
 
     // Getting conversion result and checking whether a coin has its pair
     const exchangeResultValue =
-      coinsNumberValue === ""
-        ? 0
-        : currency === convertingCurrencyValue
+      currency === convertingCurrencyValue
         ? coinsNumber
         : exchangePrice === undefined
         ? `${currency}-${convertingCurrencyValue} pair does not exist`
