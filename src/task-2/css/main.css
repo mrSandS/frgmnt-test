@@ -1,0 +1,46 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.coin-input-wrapper {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #808080;
+  padding: 10px 0;
+}
+.coins-number-input {
+  width: 100px;
+  height: 20px;
+  margin: 10px 0;
+}
+.coin-name {
+  width: 200px;
+}
+.coin-result {
+  width: 200px;
+  text-align: right;
+}
+.select-label {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.select-dropdown {
+  width: 100px;
+  height: 25px;
+}
+.submit {
+  display: block;
+  width: 200px;
+  height: 35px;
+  margin: 40px 0;
+}
+.total-results {
+  text-align: center;
+}
